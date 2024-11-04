@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="header text-center">
+        <h2 class="text-white text-2xl font-bold">Search Unlimited movies, TV shows and more</h2>
+        <p class="text-white text-lg">Ready to watch? Enter your movie name and check if it is a good choice..</p>
+        <div class="flex mt-3">
+            <input class="px-4 py-3 text-white" id="movieName" type="text" placeholder="Search a movie...">
+            <button onclick="search()" class="btn">Search movie</button>
+        </div>
+    </div>
+
+    <div id="container" class="w-[640px] mx-auto mt-16">
+        
+        <div class="flex text-neutral-50 ">
+            <div class="">
+                <h1 id="title" class="text-2xl font-bold text-neutral-200">The avengers</h1>
+                <p class="my-1">Genre: <span class="text-neutral-200" id="genre"></span></p>
+                <p id="desc" class="text-md text-neutral-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis repellat libero nesciunt iste est voluptate odio?</p>
+                <p class="my-1">Actors: <span class="text-neutral-200" id="actors"></span></p>
+                <p class="my-1">Directors: <span class="text-neutral-200" id="directors"></span></p>
+                <p class="my-1">Awards: <span class="text-neutral-200" id="awards"></span></p>
+                <p class="my-1">Box office collection: <span class="text-neutral-200" id="collection"></span></p>
+                <p class="my-1">Languages: <span class="text-neutral-200" id="ln"></span></p>
+                <p class="my-1">IMDB ratings: <span class="text-neutral-200" id="ratings"></span></p>
+            </div>
+            <div class="banner">
+                <img id="poster" class="rounded-xl" src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX300.jpg" alt="">
+
+                <div class="suggestion "></div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-center my-36 text-neutral-100" id="error"></h1>
+
+    <script src="app.js"></script>
+</body>
+</html>
